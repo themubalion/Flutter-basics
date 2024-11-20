@@ -1,6 +1,6 @@
 # first_app
 
-A new Flutter project.
+A new Flutter project. This project is the journey of me learning flutter basics, I will be completing this journey and making it a repository
 
 ## Getting Started
 
