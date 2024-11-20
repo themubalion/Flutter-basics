@@ -28,9 +28,34 @@ class MyApp extends StatelessWidget {
   !isBeginner --> returns false
   */
 
+  /*
+
+  CONDITIONALS
+
+  if(condition) {
+    code
+  } else if (){
+    code
+  } else {
+    code
+  }
+
+  */
+
 
   @override
   Widget build(BuildContext context) {
+
+  //   if(age>12 && age <= 18) {
+  //   print("You are a teenager");
+  // } else if (age < 12){
+  //   print("You are a child");
+  // } else if (age > 18){
+  //   print("You are an adult");
+  // } else {
+  //   print("This won't be printing.");
+  // }
+
     return const MaterialApp(
         home: Scaffold(),
         debugShowCheckedModeBanner: false,
