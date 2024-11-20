@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
-  print("Hello world");
+  runApp(MyApp());  
 }
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
 
-  // VARIABLES IN DART
-  String name = "Mubashshir Ali";
-  int age = 19;
-  double pi = 3.14;
-  bool isBegginer = true;
+  // // VARIABLES IN DART
+  // String name = "Mubashshir Ali";
+  // int age = 19;
+  // double pi = 3.14;
+  // bool isBegginer = true;
 
   /*
 
@@ -56,8 +55,29 @@ class MyApp extends StatelessWidget {
   //   print("This won't be printing.");
   // }
 
-    return const MaterialApp(
-        home: Scaffold(),
+    return MaterialApp(
+        home: Scaffold(
+          backgroundColor: Color.fromARGB(255, 249, 129, 129),
+          body: Center(
+            child: Container(
+              height: 300,
+              width: 300, 
+              decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(30)
+              ),
+              padding: EdgeInsets.all(25),
+              child: Text(
+                "Hello Mubashshir Ali.",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              
+            ),),
+        ),
         debugShowCheckedModeBanner: false,
       );
   }
