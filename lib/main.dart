@@ -58,6 +58,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
           backgroundColor: Color.fromARGB(255, 249, 129, 129),
+          appBar: AppBar(
+            title:Text('First App',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold
+            ),
+            ) ,
+            backgroundColor: Colors.red,
+            leading: Icon(Icons.menu,
+            color: Colors.white,),
+            actions: [
+              IconButton(onPressed: (){}, icon: Icon(Icons.logout,color: Colors.white,))
+            ],
+          ),
           body: Center(
             child: Container(
               height: 300,
