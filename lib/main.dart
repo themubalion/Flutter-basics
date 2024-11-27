@@ -80,49 +80,23 @@ class MyApp extends StatelessWidget {
           body: Column(
             mainAxisAlignment: MainAxisAlignment.start,
 
-            // crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children:[
 
+              Expanded(child: 
               Container(
-                height: 200,
-                width: 200,
-                padding: EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: Colors.deepPurple,
-                  // borderRadius: BorderRadius.circular(30)
-                ),
-                child: Text('This is box 1',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 25
-                ),
-                ),
-              ),
-
-               Container(
-              height: 200,
-              width: 200, 
-              decoration: BoxDecoration(
-                              color: Colors.deepPurple[400],
-                              // borderRadius: BorderRadius.circular(30)
-              ),
-              padding: EdgeInsets.all(25),
-              child: Text(
-                "Hello Mubashshir Ali.",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              
-            ),
-            
-            Expanded(
-              child: Container(
-                width: 200,
+                color: Colors.deepPurple,
+              )),
+              Expanded(
+                flex: 3,
+                child: 
+              Container(
+                color: Colors.deepPurple[400],
+              )),
+              Expanded(child: 
+              Container(
                 color: Colors.deepPurple[300],
-            ))
+              ))
 
             ]),
         ),
