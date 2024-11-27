@@ -55,7 +55,13 @@ class MyApp extends StatelessWidget {
   //   print("This won't be printing.");
   // }
 
+
+
+      List names = ["Mubashshir ali","khubaib ahmed khan","Muhammad Ovais"];
+
+
     return MaterialApp(
+
         home: Scaffold(
           backgroundColor: Colors.white,
 
@@ -76,25 +82,11 @@ class MyApp extends StatelessWidget {
           ),
 
 
-
-          body: Row(
-            // scrollDirection: Axis.horizontal,
-            children: [
-
-              Container(
-                width: 350,
-                color: Colors.deepPurple,
-              ),
-              Container(
-                width: 350,
-                color: Colors.deepPurple[400],
-              ),
-              Container(
-                width: 350,
-                color: Colors.deepPurple[300],
-              ),
-            ],
-          ),
+          body: ListView.builder(
+            itemCount: names.length,
+            itemBuilder: (context,index) => ListTile(
+              title: Text(names[index]),
+          )),
         ),
         debugShowCheckedModeBanner: false,
       );
