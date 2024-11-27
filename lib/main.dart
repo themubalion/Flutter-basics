@@ -77,28 +77,24 @@ class MyApp extends StatelessWidget {
 
 
 
-          body: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+          body: Row(
+            // scrollDirection: Axis.horizontal,
+            children: [
 
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children:[
-
-              Expanded(child: 
               Container(
+                width: 350,
                 color: Colors.deepPurple,
-              )),
-              Expanded(
-                flex: 3,
-                child: 
+              ),
               Container(
+                width: 350,
                 color: Colors.deepPurple[400],
-              )),
-              Expanded(child: 
+              ),
               Container(
+                width: 350,
                 color: Colors.deepPurple[300],
-              ))
-
-            ]),
+              ),
+            ],
+          ),
         ),
         debugShowCheckedModeBanner: false,
       );
