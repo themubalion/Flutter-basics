@@ -57,45 +57,54 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
         home: Scaffold(
-          backgroundColor: Color.fromARGB(255, 249, 129, 129),
+          backgroundColor: Colors.white,
 
 
-          // appBar: AppBar(
-          //   title:Text('First App',
-          //   style: TextStyle(
-          //     color: Colors.white,
-          //     fontWeight: FontWeight.bold
-          //   ),
-          //   ) ,
-          //   backgroundColor: Colors.red,
-          //   leading: Icon(Icons.menu,
-          //   color: Colors.white,),
-          //   actions: [
-          //     IconButton(onPressed: (){}, icon: Icon(Icons.logout,color: Colors.white,))
-          //   ],
-          // ),
+          appBar: AppBar(
+            title:Text('First App',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold
+            ),
+            ) ,
+            backgroundColor: Colors.red,
+            leading: Icon(Icons.menu,
+            color: Colors.white,),
+            actions: [
+              IconButton(onPressed: (){}, icon: Icon(Icons.logout,color: Colors.white,))
+            ],
+          ),
 
 
 
           body: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.start,
+
+            // crossAxisAlignment: CrossAxisAlignment.start,
             children:[
 
-              
               Container(
                 height: 200,
                 width: 200,
+                padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: Colors.deepPurple
+                  color: Colors.deepPurple,
+                  // borderRadius: BorderRadius.circular(30)
+                ),
+                child: Text('This is box 1',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 25
+                ),
                 ),
               ),
 
                Container(
-              height: 300,
-              width: 300, 
+              height: 200,
+              width: 200, 
               decoration: BoxDecoration(
-                              color: Colors.red,
-                              borderRadius: BorderRadius.circular(30)
+                              color: Colors.deepPurple[400],
+                              // borderRadius: BorderRadius.circular(30)
               ),
               padding: EdgeInsets.all(25),
               child: Text(
@@ -107,7 +116,15 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               
-            ),]),
+            ),
+            
+            Expanded(
+              child: Container(
+                width: 200,
+                color: Colors.deepPurple[300],
+            ))
+
+            ]),
         ),
         debugShowCheckedModeBanner: false,
       );
